@@ -151,10 +151,10 @@ if "READTHEDOCS" in os.environ:
     if "build_ext" in cmdclass:
         del cmdclass["build_ext"]
 
-    # use CPU build of PyTorch
+    '''# use CPU build of PyTorch
     dependency_links = [
         "https://download.pytorch.org/whl/cpu/torch-1.7.0%2Bcpu-cp36-cp36m-linux_x86_64.whl"
-    ]
+    ]'''
 else:
     dependency_links = []
 
@@ -206,10 +206,10 @@ def do_setup(package_data):
             'numpy; python_version>="3.7"',
             "regex",
             "sacrebleu>=1.4.12",
-            "torch",
+            #"torch",
             "tqdm",
             "bitarray",
-            "torchaudio>=0.8.0",
+            #"torchaudio>=0.8.0",
         ],
         dependency_links=dependency_links,
         packages=find_packages(
