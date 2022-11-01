@@ -1,4 +1,4 @@
-# fairseq-0.12.2
+# fairseq
 
 Rough copy-past of a specific version of fairseq(0.12.2)
 
